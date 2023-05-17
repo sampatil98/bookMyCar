@@ -1,0 +1,508 @@
+    #refer {
+        z-index: 1;
+        display:none;
+        border-radius: 5%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        /* visibility: hidden; */
+        margin: 35%;
+        padding: 5%;
+    }
+
+    #refer-div {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6%;
+    }
+
+    .refers {
+       
+        text-align: justify;
+
+        /* text-align: center; */
+    }
+
+    #button {
+        height: 30px;
+        width: 30px;
+        margin-left: 90%;
+    }
+
+
+
+
+    /* -------------------------------- */
+    body {
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    #navbar {
+        position: fixed;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        align-items: center;
+        padding: 3px 50px 3px 30px;
+
+    }
+
+    #project-logo {
+        width: 60px;
+        cursor: pointer;
+    }
+
+    #BookMyCar {
+        color: white;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #ham-burger-icon {
+        padding-left: 90px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    #left-bar {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #left-bar>div {
+        margin-right: 20px;
+    }
+
+    #right-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    #right-bar>div {
+        margin-left: 30px;
+    }
+
+    #right-bar a {
+        text-decoration: none;
+    }
+
+    #host-button {
+        padding-top: 5px;
+        font-size: 20px;
+        margin-left: 5px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+
+    }
+
+    #login-signup-button {
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #host-img {
+        width: 30px;
+    }
+
+    #right-bar span {
+        color: white;
+        cursor: pointer;
+    }
+
+    #Start_Earninig {
+        background-color: rgb(22, 137, 33);
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #host-group {
+        display: flex;
+        background-color: white;
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    #mobile-head {
+        position: relative;
+        top: -90px;
+        background-color: rgb(22, 137, 33);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #mobiles {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        width: 98%;
+    }
+
+    #mobile {
+        display: flex;
+        color: white;
+    }
+
+    #mobile img {
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    #mobile span {
+        margin-left: 20px;
+    }
+
+    #mobile-head>div:nth-child(2) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    #mobile-head a {
+        text-decoration: none;
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #close {
+        width: 20px;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #mobile-head {
+        visibility: hidden;
+    }
+
+
+
+
+
+
+
+
+    #side-bar {
+        background-color: white;
+        box-shadow: 0 60px 80px rgba(0, 0, 0, 0.80), 0 45px 26px rgba(0, 0, 0, 0.14);
+        width: 25%;
+        min-height: 850px;
+        position: absolute;
+        position: static;
+        position: fixed;
+        top: -20px;
+        visibility: hidden;
+    }
+
+    #side-bar img {
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    #side-bar>div {
+        display: flex;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #change-city {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #user-css {
+        background-color: rgb(225, 229, 233);
+        justify-content: space-between;
+    }
+
+    #delhi-ncr {
+        color: rgb(22, 137, 33);
+    }
+
+    #user-css> :nth-child(1) {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #X {
+        color: rgb(22, 137, 33);
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 500px) and (max-width: 1000px) {
+        #navbar {
+            visibility: hidden;
+        }
+
+        #mobile-head {
+            visibility: visible;
+        }
+    }
+
+    /* ---------------------------------------------- */
+
+    #range {
+        padding-right: 50%;
+        color: green;
+    }
+
+    #section-1 {
+        display: flex;
+        margin-left: 5%;
+    }
+
+    #for-two-cards {
+        margin-right: 8%;
+    }
+
+    #card-1 {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 7%;
+        border-radius: 10%;
+        margin-bottom: 3%;
+    }
+
+    .card1 {
+        text-align: center;
+    }
+
+
+    #logo {
+        padding-top: 8%;
+        padding-right: 21%;
+        padding-left: 5%;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    .padright {
+        padding: 5%;
+        padding-right: 16%;
+    }
+
+    #sub-card-2 {
+        display: flex;
+    }
+
+    #card-2 {
+        margin-top: 9%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 3%;
+    }
+
+    #sliding img {
+        margin-top: 0%;
+        height: 550px;
+        width: 850px;
+    }
+
+    #section-2 {
+        background-color: gainsboro;
+        margin-top: 3%;
+        padding-top: 1%;
+        padding-bottom: 4%;
+    }
+
+    #section-2>#main-heading {
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    #sub-section-2 {
+        display: flex;
+        margin-left: 6%
+    }
+
+    .center {
+        text-align: center;
+        align-items: center;
+    }
+
+    .content {
+        padding-left: 50%;
+    }
+
+    #sub-section-2 p {
+        padding-left: 2%;
+        padding-right: 3%;
+    }
+
+    #section-3 {
+        display: flex;
+        padding-top: 7%;
+        margin-left: 3%;
+
+    }
+
+    #is-heading {
+        font-size: 40px;
+        padding: 2%;
+    }
+
+    #section-3>div {
+        padding-right: 4%;
+    }
+
+    #section-4heading {
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    #sub-section-4 {
+        display: flex;
+    }
+
+    #section-4 {
+        margin-left: 4%;
+        padding-top: 4%;
+
+    }
+
+    #sub-section-4>div {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #section-5>img {
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+    }
+
+    #center-comma {
+        /* align-items: center; */
+        padding-left: 50%;
+    }
+
+
+
+    #qr {
+        padding: 100px;
+        margin: auto;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        background-color: silver;
+        margin-top: 5%;
+    }
+
+    #qr span {
+        font-size: 60px;
+        color: rgb(146, 146, 146);
+    }
+
+    #qr>div:nth-child(2) {
+        display: flex;
+        width: 60%;
+    }
+
+    #qr>div:nth-child(2)>div {
+        margin-left: 30px;
+    }
+
+    #qr>div:nth-child(2)>div img {
+        width: 120px;
+    }
+
+    #qr>div:nth-child(2)>div:nth-child(1) {
+        text-align: center;
+
+    }
+
+    #copyright {
+
+        width: 85%;
+        border-top: solid 2px white;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    @media only screen and (min-width: 500px) and (max-width: 1000px) {
+        #navbar {
+            visibility: hidden;
+        }
+
+        #find-car-section {
+            margin-top: -25%;
+        }
+
+        #mobile-head {
+            visibility: visible;
+        }
+
+        #second-tag-line+h1+h2+div {
+            grid-template-columns: repeat(1, 1fr);
+            width: 60%;
+        }
+
+    }
+
+
+    /* Accordian css */
+
+    .accordion {
+
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+
+
+    #section-6-heading {
+        text-align: center;
+
+    }
+
+    #sub-sub-div-1 {
+        padding-right: 5%;
+    }

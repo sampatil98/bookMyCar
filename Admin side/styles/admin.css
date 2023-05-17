@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color:azure;
+    
+}
+#navbar{
+    
+    background-color: black;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+}
+img{
+    width: 8%;
+    border-radius: 100%;
+    
+}
+#left{
+   
+    display: flex;
+    align-items: center;
+    
+    margin-left: 30px;
+}
+#left h2{
+    color: white;
+    margin-left: 20px;
+
+}
+.right_sub_div{
+    display: flex;
+    align-items: center;
+}
+.right_sub_div img{
+    width: 30px;
+   
+}
+.right_sub_div p{
+    color: white;
+    margin-left: 10px;
+}
+#main_container{
+    display: flex;
+    gap: 20px;
+}
+#main{
+    display: flex;
+    justify-content: space-between;
+}
+#right{
+    width: 15%;
+   
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#postform_div{
+   
+    width: 35%;
+    margin-top: 20px;
+}
+form{
+    padding: 10px;
+}
+/* each form */
+#POSTform{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-left: 30px;
+    border-radius: 5px;
+    
+   
+}
+/* /------------/ */
+#form_heding{
+    text-align: center;
+}
+h1{
+    color: rgb(53, 152, 194);
+    
+}
+.each_div{
+   
+    margin-top: 10px;
+    
+}
+.each_div p{
+    color:hsl(142, 91%, 46%);
+    margin-bottom: 5px;
+}
+.each_input{
+    background-color: azure;
+    border: 2px solid green;
+    width: 90%;
+    height: 25px;
+    padding: 3px;
+    border-radius: 8px;
+    
+}
+#submit_btn_POST{
+    margin-top: 20px;
+    width: 93%;
+    background-color: orange;
+    height: 30px;
+}
+#submit_btn_POST:hover{
+    cursor: pointer;
+}
+#product_section{
+    border: 2px gray;
+    border-style: double;
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#product_heading{
+    background-color: rgb(90, 217, 249);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+#DELETEform{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+   
+}
+#cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 5px;
+    height: 580px;
+    overflow: auto;
+}
+.productimage{
+    width: 100%;
+    border-top: 1px solid black;
+}
+.maindiv{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+#total{
+    display: flex;
+    align-items: center;
+}
+#totalproducts{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.productid{
+    color: orange;
+}

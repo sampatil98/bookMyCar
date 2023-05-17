@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="main">
+
+            
+            <div id="left">
+                <img src="./images/Car Logo.png" alt="">
+                <h2>BookMyCar</h2>
+            </div>
+
+            <div id="right">
+                <div class="right_sub_div">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1177/1177568.png" alt="">
+                    <p> Admin </p>
+                </div>
+
+                <div class="right_sub_div">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4033/4033019.png" alt="">
+                    <a href="http://127.0.0.1:5500/index.html"> <p> Logout </p> </a>
+                </div>
+                
+            </div>
+
+
+        </div>
+        
+    </nav>
+<div id="main_container">
+    <div id="postform_div">
+        <form action="submit" id="POSTform">
+            
+            <h1>Add Your Product</h1>
+            <div class="each_div">
+                <p>Car Model Name *</p>
+                <input type="text" class="each_input" id="name" placeholder="Enter Car Model Name">
+            </div>
+
+            <div class="each_div">
+                <p>Image URL *</p>
+                <input type="text" class="each_input" id="image" placeholder="Enter Image URL">
+            </div>
+
+            <div class="each_div">
+                <p>Price / hour *</p>
+                <input type="number" class="each_input" id="price" placeholder="Enter Price ">
+            </div>
+
+            <div class="each_div">
+                <p>Seat Capacity *</p>
+                <input type="number" class="each_input" id="capacity" placeholder="Enter Seat Capacity">
+            </div>
+
+            <div class="each_div">
+                <p>Fuel Type *</p>
+                <input type="text" class="each_input" id="fuel" placeholder="Enter Fuel Type">
+            </div>
+            
+            <input type="submit" id="submit_btn_POST" class="each_input">
+        </form>
+
+
+
+
+        <form action="submit" id="DELETEform">
+
+            <h1>Delete Product</h1>
+
+            <div class="each_div">
+                <p> Product ID *</p>
+                <input type="text" class="each_input" id="name" placeholder="Enter Product ID">
+            </div>
+
+            <input type="submit" id="submit_btn_POST" class="each_input">
+
+        </form>
+    </div>
+
+    <div id="product_section">
+        <div id="product_heading">
+            <h3> ALL PRODUCT DATA !!! </h3>
+            <div id="total">
+            <h3 >Total Product : </h3>
+            <p id="totalproducts"> </p>
+            </div>
+        </div>
+
+        <div id="cont">
+            <!-- append all data card here -->
+
+        </div>
+        
+
+    </div>
+</div>
+    <script src="./script/admin.js"></script>
+</body>
+</html>

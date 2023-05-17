@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* body{
+            overflow-y: hidden;
+        } */
+
+        #login-section {
+           
+            width: 30%;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+      
+
+        #login-section>div:nth-child(1) img {
+            width: 100%;
+    
+        }
+
+        #login-section>div:nth-child(2) {
+            margin: 2rem auto;
+            width: 90%;
+        }
+
+        #login-section>div:nth-child(2)>h1 {
+            margin: 2rem auto 2rem 1rem;
+            font-size: 1.8rem;
+        }
+
+        #login-text_Container>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 0.1fr 0.1fr 0.8fr;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem;
+            font-size: 1.3rem;
+
+        }
+
+        #login-text_Container>div:nth-child(2) img {
+            width: 100%;
+        }
+
+        #login-text_Container>div:nth-child(2)>*:last-child {
+            border-left: 2px solid #c36868;
+            padding-left: 0.5rem;
+        }
+
+        #login-text_Container>div:nth-child(3) {
+            margin: 1rem auto 1rem 1rem;
+            font-size: 1.2rem;
+            padding: 2rem 0px;
+            border-bottom: 1px solid #e0e0e0;
+            border-top: 1px solid #e0e0e0;
+        }
+        #login-text_Container>div:nth-child(3) a{
+            text-decoration: none;
+              color: green;
+        }
+
+        #login-text_Container>div:nth-child(4) {
+            display: flex;
+            align-items: center;
+            margin: 2rem auto 2rem 1rem;
+            font-size: 1.2rem;
+            color: green;
+        }
+        #login-text_Container>div:nth-child(4)>img{
+            margin-left: 0.5rem;
+
+        }
+        #login-section i{
+            margin-left: 1rem;
+        }
+         #login-section i:hover{
+            cursor: pointer;
+         }
+         @media only screen and (max-width: 1740px) {
+              #login-section>div:nth-child(2)>h1{
+                font-size: 1.5rem;
+              }
+               #login-text_Container>div:nth-child(2)>*:last-child{
+                    font-size: 1rem;
+               }
+                #login-text_Container>div:nth-child(2)>span:nth-child(2){
+                    font-size: 1rem;
+                }
+        }
+        @media only screen and (max-width: 1400px){
+         
+
+            #login-section{
+                width: 40%;
+                margin: 1rem auto;
+            }   
+         @media only screen and (max-width: 1000px){
+            #login-section{
+                width: 60%;
+                margin: 3rem auto;
+
+            }
+         } 
+          @media only screen and (max-width: 600px){
+            #login-section{
+                width: 100%;
+            }
+            #login-text_Container>div:nth-child(3){
+                    padding: 1rem;
+            }
+             #login-text_Container>div:nth-child(4){
+                padding: 1rem;
+                margin-bottom: 0.1rem;
+                margin-top: 0.3rem;
+             }
+          }   
+}
+    </style>
+</head>
+
+<body>
+
+    <section id="login-section">
+      
+        <div><i class="fa-solid fa-arrow-left"></i>
+            <img src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg" alt="Car Image"></div>
+
+        <div id="login-text_Container">
+            <h1>Enter details to login/sign-up</h1>
+            <div><img
+                    src="https://zoomcar-assets.zoomcar.com/images/original/38ff9c58fe221677b6e8958c1caba43d35710fe2.png?1654779648"
+                    alt="Flag Image"> <span>+91</span> <span>Enter Mobile Number</span></div>
+
+            <div><a href="login.html">Continue with Email ID</a></div>
+
+            <div><span>Continue via Social</span> <img
+                    src="https://www.zoomcar.com/build/62ba375ec1a9fbcbee9e9099181c8d38.svg" alt="facebook-social"> <img
+                    src="https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg" alt="google image"></div>
+        </div>
+</section>
+</body>
+<script src="https://kit.fontawesome.com/cbfe85fe31.js" crossorigin="anonymous"></script>
+<script>
+    let backICon = document.querySelector("i");
+    backICon.addEventListener("click",()=>{
+        window.location.replace(`/index.html`)
+    })
+</script>
+
+</html>

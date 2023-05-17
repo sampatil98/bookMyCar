@@ -1,0 +1,487 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+#navbar{
+display: flex;
+justify-content: space-between;
+background-color: black;
+align-items: center;
+padding: 3px 50px 3px 30px;
+
+}
+#project-logo{
+    width: 60px;
+    cursor: pointer;
+}
+p {
+    font-weight: lighter;
+}
+#BookMyCar{
+    color: white;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ham-burger-icon{
+width: 30px;
+cursor: pointer;
+}
+#left-bar{
+    display: flex;
+    align-items: center;
+    
+}
+#left-bar > div{
+ margin-right: 20px;
+}
+
+#right-bar{
+    display: flex;
+    align-items: center;
+}
+#right-bar > div{
+ margin-left: 30px;
+}
+
+#host-button{
+    padding-top: 5px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#login-signup-button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#host-img{
+    width: 30px;
+}
+
+#host-group{
+    display: flex;
+}
+#right-bar > div:nth-child(1){
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+#mobile-head{
+    position: relative;
+    top: -90px;
+    background-color: rgb(22, 137, 33);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:8px;
+    padding-right: 8px;
+}
+
+#mobiles{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 98%;
+}
+#mobile{
+    display: flex;
+    color: white;
+}
+#mobile img{
+    width: 40px;
+    margin-left: 20px;
+}
+#mobile span{
+    margin-left: 20px;
+}
+#mobile-head > div:nth-child(2){
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#mobile-head a{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#close{
+    width: 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#mobile-head{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+#side-bar{
+    background-color: white;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.80), 0 45px 26px rgba(0,0,0,0.14);
+    width: 25%;
+    min-height: 850px;
+    position: absolute;
+    position: static;
+    position: fixed;
+    top: -20px;
+    visibility: hidden;
+}
+#change{
+    color: #168921;
+    align-items: center;
+}
+
+#side-bar img{
+    width: 30px;
+    margin-right: 20px;
+}
+#side-bar > div{
+    display: flex;   
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+#change-city{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#user-css{
+    background-color: rgb(225, 229, 233);    
+    justify-content: space-between;
+}
+#delhi-ncr{
+    color: rgb(22, 137, 33);
+}
+#user-css > :nth-child(1){
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#X{
+    color: rgb(22, 137, 33);
+    cursor: pointer;
+}
+
+#find-cars{
+    position: relative;
+    top: -165px;
+    background-image: url(/images/outing.png);
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+#find-cars > img{
+    width: 100%;
+    height: 600px;
+}
+#find-cars div:nth-child(1){
+    color: white;
+    padding: 25px;
+    
+}
+
+#tag-line{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    margin-bottom: 3%;
+}
+
+#submit-find-cars{
+    padding: 20px;
+    background-color: #168921;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+form img {
+    width: 25px;
+    margin-top: -20px;
+
+}
+form > div {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 26%;
+    background-color: white;
+    height: 15px;
+    border-radius: 8px;
+    border: solid  #168921;
+}
+#find-cars h2{
+    font-family: Optima;
+}
+#from,#to,#till{
+    width: 26.5%;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#to,#till{
+    width: 12%;
+    margin-left: -.5%;
+}
+
+#to{
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#till{
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+form span{
+    color: #168921;
+}
+
+#car-images{
+    margin: auto;
+    margin-top: -9%;
+    width: 80%;
+}
+#car-images h1{
+    text-align: center;
+    font-family: Optima;
+}
+
+#car-images > div{
+    display: flex;
+    align-items: center;
+}
+#slide-image{
+    width: 100%;
+}
+#less-than,#more-than{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+#second-tag-line{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url(/images/2016-Prius-V.jpg);  
+    background-size: 100%; 
+    background-repeat: no-repeat;
+
+}
+
+
+#second-tag-line + h1,#second-tag-line + h1 +h2{
+    text-align: center;
+}
+
+#second-tag-line + h1 +h2 + div{
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+ width: 80%;
+ margin: auto;
+}
+#second-tag-line + h1 +h2 + div img{
+    width: 90%;
+    margin-left: 10%;
+}
+ 
+#second-tag-line > div,#third-tag-line > div{
+    color: white;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-bottom: 26%;
+}
+
+#center-text{
+    text-align: center;
+}
+#third-tag-line{
+    background-image: url(/images/Car-with-phone-us.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 5px;
+}
+#third-tag-line > div{
+    width: 40%;    
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+#about-us{
+    background-color:rgb(49, 49, 49) ;
+    color: white;
+    padding-bottom: 50px;
+
+}
+
+#about-us > div:nth-child(1){
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+    width: 85%;
+
+}
+#about{
+    border-bottom: solid 2px white;
+}
+#about-us > div:nth-child(1) > span{
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    
+}
+#about-us h1{
+    font-size: 25px;
+}
+
+
+#about-us > div:nth-child(2){
+    margin: auto;
+    width: 85%;
+    margin-top: 30px;
+}
+
+#about-us > div:nth-child(2) a{
+    color: white;
+}
+#about-us p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+#locations{
+    margin-top: -1.4%;
+    background-color: rgb(91, 91, 91);
+    padding-top: 3%;
+    color: white;
+}
+#locations > div:nth-child(1){
+    width: 85%;
+    margin: auto;
+}
+#locations > div:nth-child(2){
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+#locations a{
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#locations span{
+    margin-top: 20px;
+}
+#locations > div:nth-child(3){
+    width: 70%;
+    
+}
+#locations > div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+}
+
+#social{
+    width: 85%;
+    margin: auto;
+}
+#social img{
+margin-right: 20px;
+
+}
+
+#qr{
+    padding: 60px;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#qr span{
+    font-size: 60px;
+    color: rgb(146, 146, 146);
+}
+#qr  > div:nth-child(2){
+    display: flex;
+    width: 60%;
+}
+#qr  > div:nth-child(2) > div{
+    margin-left: 30px;
+}
+#qr  > div:nth-child(2) > div img{
+    width: 120px;
+}
+#qr  > div:nth-child(2) > div:nth-child(1){
+text-align: center;
+
+}
+#copyright{
+
+    width: 85%;
+    border-top: solid 2px white;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#logout {
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    #navbar{
+        visibility: hidden;
+    }
+    
+    #find-car-section{
+        margin-top:-25%;
+    }
+    #mobile-head{
+        visibility: visible;
+    }
+    #second-tag-line + h1 +h2 + div{
+        grid-template-columns: repeat(1,1fr);
+        width: 60%;    
+       }
+
+    }

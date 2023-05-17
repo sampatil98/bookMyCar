@@ -1,0 +1,70 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background-image: url("/images/16692.webp");
+    
+}
+img{
+    width: 100%; 
+    /* position: fixed; */
+}
+
+#main_div{
+    width: 40%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 800px;
+}
+input{
+    display: block;
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    background: local;
+    border: 1px solid white;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: white;
+}
+#btn{
+    
+    margin: 10px;
+    margin-top: 20px;
+    width: 210px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+}
+
+#btn,p:hover{
+    cursor: pointer;
+}
+#form img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+p{
+    color: rgb(138, 191, 238);
+    font-size: 12px;
+    margin-top: 7px;
+    margin-left: 140px;
+   
+}
+#showerr {
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.errmsg{
+    color:red
+}

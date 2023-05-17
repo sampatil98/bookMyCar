@@ -1,0 +1,466 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+#navbar{
+display: flex;
+justify-content: space-between;
+background-color: black;
+align-items: center;
+padding: 3px 50px 3px 30px;
+position: fixed;
+width: 97%;
+
+}
+#project-logo{
+    width: 60px;
+    cursor: pointer;
+}
+#BookMyCar{
+    color: white;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ham-burger-icon{
+width: 30px;
+cursor: pointer;
+}
+#left-bar{
+    display: flex;
+    align-items: center;
+    
+}
+#left-bar > div{
+ margin-right: 20px;
+}
+
+#right-bar{
+    display: flex;
+    align-items: center;
+}
+#right-bar > div{
+ margin-left: 30px;
+}
+#logout {
+    display: flex;
+    align-items: center;
+}
+
+#host-button{
+    padding-top: 5px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#login-signup-button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#login-signup-button a{
+    color: white;
+    text-decoration: none;
+}
+#host-img{
+    width: 30px;
+}
+
+#host-group{
+    display: flex;
+}
+#right-bar > div:nth-child(1){
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+#mobile-head{
+    position: relative;
+    top: -90px;
+    background-color: rgb(22, 137, 33);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:8px;
+    padding-right: 8px;
+}
+
+#mobiles{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 98%;
+}
+#mobile{
+    display: flex;
+    color: white;
+}
+#mobile img{
+    width: 40px;
+    margin-left: 20px;
+}
+#mobile span{
+    margin-left: 20px;
+}
+#mobile-head > div:nth-child(2){
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#mobile-head a{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#close{
+    width: 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#mobile-head{
+    visibility: hidden;
+}
+
+
+#side-bar{
+    background-color: white;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.80), 0 45px 26px rgba(0,0,0,0.14);
+    width: 25%;
+    min-height: 1000px;
+    position: absolute;
+    position: static;
+    position: fixed;
+    top: -20px;
+    visibility: hidden;
+}
+
+#side-bar img{
+    width: 30px;
+    margin-right: 20px;
+}
+#side-bar > div{
+    display: flex;   
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+#change-city{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#user-css{
+    background-color: rgb(225, 229, 233);    
+    justify-content: space-between;
+}
+#delhi-ncr{
+    color: rgb(22, 137, 33);
+}
+#user-css > :nth-child(1){
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#X{
+    color: rgb(22, 137, 33);
+    cursor: pointer;
+}
+#product-page{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#left{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 1200px;
+}
+#left img{
+    width: 30px;
+}
+#right{
+    width: 70%;
+    padding-right: 20px;
+    overflow: auto;
+    height: 1200px;
+}
+#XXX{
+    visibility: hidden;
+}
+#seats{
+display: grid;
+text-align:center ;
+grid-template-columns: repeat(3,1fr);
+margin-bottom: 10px;
+gap: 10px;
+cursor: pointer;
+}
+#Transmisson{
+    display: grid;
+    text-align:center ;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 10px;
+    gap: 10px;
+}
+#Transmisson > div,#seats > div,#Ratings > span{
+    border: solid .5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#Ratings > span{
+    padding: 10px;
+}
+#range1,#range2{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#Ratings{
+    display: grid;
+    text-align:center ;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#from{
+    width: 40%;
+}
+#from,#to,#till{
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: #168921 solid 2px;
+}
+
+
+#to{
+    
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: -5px; 
+    
+}
+#till{
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}
+
+#navbar-filter{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;    
+}
+#navbar-filter img{
+    width: 20px;
+    margin-bottom: -10px;
+
+}
+
+#card{
+    border: solid 1px black;
+    border-radius: 20px;
+    padding-bottom: 5px;  
+    cursor: pointer;
+}
+
+#pad{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+}
+#card > div:nth-child(1) img{
+    width: 100%;
+}
+#card > div:nth-child(1){
+    text-align: center;
+    background-image: url(https://www.zoomcar.com/img/marketplace-background.png);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#pad h1 {
+    margin-top: -8px;
+}
+
+#bottom{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8.5%;
+}
+
+#bottom > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-bottom: none;
+    border-top-right-radius: 20px;
+    background-color: white;
+    margin-left: -20px;    
+}
+#card h3{
+ text-decoration: line-through;   
+ font-weight: 90;
+}
+
+#bottom > div:nth-child(1) img{
+    width: 20px;
+}
+#bottom > img{
+    width: 60px;
+    border-radius: 120%;
+    cursor: pointer;
+}
+#price > div:nth-child(2){
+    border: solid .1px ;
+    background-color: rgb(207, 236, 178);
+    padding: 2px;
+}
+
+#price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lines{
+    border: solid .5px;
+    margin-top: 20px;
+}
+#line{
+    border: solid .5px;
+ 
+}
+#price img{
+    width: 20px;
+}
+
+#price span{
+    font-weight: 990px;
+}
+#banner{
+    background-color: #168921;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;    
+}
+#sort_by{
+    width: 90%;
+    padding-top: 5%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#sort_by > span:nth-child(2){
+    color: #168921;
+
+}
+#box img{
+    width: 30px;
+}
+#box span{
+    font-size: 13px;
+}
+#box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#box{
+    display: grid;
+    text-align: center;
+    gap:10px;
+    grid-template-columns: repeat(4,1fr);
+    cursor: pointer;
+    
+}
+#box > div {
+    
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;    
+}
+#search{
+    display: flex;
+
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#search img{
+width: 30px;
+margin-right: 10px;
+
+}
+#search input{
+    width: 100%;
+    padding: 10px;
+
+}
+#nine{
+   width: 90%;
+   margin: auto;
+   
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    #navbar,form,#left{
+        visibility: hidden;
+    }
+    #mobile-head{
+        visibility: visible;
+    }
+
+    #left{
+        width: 0%;
+    
+    }
+    #right{
+        width: 100%;
+    }
+    #cards{
+        grid-template-columns: repeat(1,1fr);
+        padding: 40px;
+    }
+}

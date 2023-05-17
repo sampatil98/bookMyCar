@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @ Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+            padding: 3px 50px 3px 30px;
+
+        }
+
+        #project-logo {
+            width: 60px;
+            cursor: pointer;
+        }
+
+        #BookMyCar {
+            color: white;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #ham-burger-icon {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        #left-bar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #left-bar>div {
+            margin-right: 20px;
+        }
+
+        #side-bar>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        #right-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        #right-bar>div {
+            margin-left: 30px;
+        }
+
+        #change-city>div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #host-button {
+            padding-top: 5px;
+            font-size: 20px;
+            margin-left: 5px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        #login-signup-button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #host-img {
+            width: 30px;
+        }
+
+        #host-group {
+            display: flex;
+        }
+
+        #right-bar>div:nth-child(1) {
+            background-color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            border-radius: 20px;
+        }
+
+        #mobile-head {
+            position: relative;
+            top: -90px;
+            background-color: rgb(22, 137, 33);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        #mobiles {
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            width: 98%;
+        }
+
+        #mobile {
+            display: flex;
+            color: white;
+        }
+
+        #mobile img {
+            width: 40px;
+            margin-left: 20px;
+        }
+
+        #mobile span {
+            margin-left: 20px;
+        }
+
+        #mobile-head>div:nth-child(2) {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        #mobile-head a {
+            text-decoration: none;
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #close {
+            width: 20px;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #mobile-head {
+            visibility: hidden;
+        }
+
+        #side-bar {
+            background-color: white;
+            box-shadow: 0 60px 80px rgba(0, 0, 0, 0.80), 0 45px 26px rgba(0, 0, 0, 0.14);
+            width: 25%;
+            min-height: 850px;
+            position: absolute;
+            position: static;
+            position: fixed;
+            top: -20px;
+            visibility: hidden;
+        }
+
+        #change {
+            color: #168921;
+            align-items: center;
+        }
+
+        #side-bar img {
+            width: 30px;
+            margin-right: 20px;
+        }
+
+        #side-bar>div {
+            display: flex;
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #change-city {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #user-css {
+            background-color: rgb(225, 229, 233);
+            justify-content: space-between;
+        }
+
+        #delhi-ncr {
+            color: rgb(22, 137, 33);
+        }
+
+        #user-css> :nth-child(1) {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #X {
+            color: rgb(22, 137, 33);
+            cursor: pointer;
+        }
+
+        #find-cars {
+            position: relative;
+            top: -165px;
+            background-image: url(.//images/outing.png);
+            background-size: 100% 100%;
+            text-align: center;
+            padding-top: 30px;
+
+        }
+
+        #find-cars>img {
+            width: 100%;
+            height: 600px;
+        }
+
+        #find-cars div:nth-child(1) {
+            color: white;
+            padding: 25px;
+        }
+
+        #tag-line {
+            width: 80%;
+            margin: auto;
+            background-color: rgba(0, 0, 0, .5);
+            margin-bottom: 3%;
+        }
+
+        #submit-find-cars {
+            padding: 20px;
+            background-color: #168921;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        form img {
+            width: 25px;
+            margin-top: -20px;
+
+        }
+
+        form>div {
+            margin: auto;
+            margin-bottom: 10px;
+            width: 26%;
+            background-color: white;
+            height: 15px;
+            border-radius: 8px;
+            border: solid #168921;
+        }
+
+        #nav-div {
+            margin-bottom: 0px !important;
+        }
+
+        /* section start here */
+        section {
+            width: 90%;
+            margin: 0px auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        section>div:nth-child(1) {
+
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-right: 1rem;
+
+        }
+
+        #box-1 {
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        #box-1>img {
+            width: 50%;
+        }
+
+        #box-1>button {
+            background: black;
+            color: white;
+
+        }
+
+        #box-2 {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            padding: 1rem;
+            border-radius: 0.3rem;
+            padding: 1rem;
+        }
+
+
+
+        #Car-info-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+
+        }
+
+        #Car-info-text>div:nth-child(2) {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #Car-info-text>div:nth-child(2) img {
+
+            margin-right: 1rem;
+        }
+
+        .fa-star {
+            color: #957d00;
+        }
+
+        #time-duration-rent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        #time-duration-rent>div:nth-child(1),
+        #time-duration-rent>div:nth-child(2) {
+            display: flex;
+        }
+
+        .time-start>p:nth-child(1),
+        .time-end>p:nth-child(1) {
+
+            margin-bottom: 0px;
+        }
+
+        .time-start>p:nth-child(2),
+        .time-end>p:nth-child(2) {
+
+            margin-top: 0.3rem;
+        }
+
+        #time-duration-rent>div:nth-child(1)>p:nth-child(1) {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #10a310;
+            margin-right: 1rem;
+            margin-top: 2rem;
+        }
+
+        #time-duration-rent>div:nth-child(2)>p:nth-child(1) {
+            width: 8px;
+            height: 8px;
+
+            background-color: red;
+            margin-right: 1rem;
+            margin-top: 2rem;
+        }
+
+        #distance {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+
+
+        section>div:nth-child(2) {
+            border-radius: 0.3rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            padding: 1.5rem 1rem;
+        }
+
+        #right-box-1>img {
+            width: 24px;
+            max-width: 24px;
+            margin-right: 1rem;
+        }
+
+        #right-box-1>span:nth-child(3) {
+            text-decoration: line-through;
+
+        }
+
+        #right-box-1>span:nth-child(4) {
+            margin-left: 0.5rem;
+        }
+
+        #right-box>div:nth-child(2) {
+            margin-top: 3rem;
+
+        }
+
+        #right-box>div:nth-child(2)>div {
+            display: flex;
+        }
+
+        #right-box>div:nth-child(2)>div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #right-box>div:nth-child(2)>div img {
+            width: 5%;
+            height: 1%;
+        }
+
+        #right-box>div:nth-child(2)>div input {
+            color: green;
+        }
+
+        #right-box>div:nth-child(2)>div>div>p {
+            margin-bottom: 0.5rem;
+            margin-top: 0.1rem;
+        }
+
+        #right-box>div:nth-child(2)>div {
+            margin-top: 2rem;
+        }
+
+        .deal {
+            color: #10a310;
+        }
+
+        .lightColor-text {
+            color: #a7a7a7;
+        }
+
+        #right-box>div:nth-child(3) {
+            text-align: left;
+            padding: 0.1rem 2.3rem;
+            margin-top: 2rem;
+        }
+
+
+        #right-box>div:nth-child(4)>div {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #right-box>div:nth-child(4)>div>p {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #right-box>div:nth-child(4)>div {
+            padding: 0.1rem 2.3rem;
+        }
+
+        #button {
+            display: block;
+            width: 90%;
+            margin: auto;
+            padding: 1rem;
+            background: #10a310;
+            border: none;
+            border-radius: 0.3rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        #button:hover {
+            cursor: pointer;
+        }
+        #section{
+            margin-top: -8rem;
+        }
+
+        @media only screen and (max-width: 1730px) {
+            section>div:nth-child(2) {
+                margin-left: 0rem;
+            }
+
+            section>div:nth-child(1) {
+                width: 90%;
+                margin-right: 0.2rem;
+            }
+
+            #box-3>img {
+                width: 100%;
+            }
+
+            section>div:nth-child(2) {
+
+                width: 100%;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-div">
+
+
+        <div id="navbar">
+            <div id="left-bar">
+                <div><img id="ham-burger-icon" src="./images/icons8-menu-rounded-48.png" alt=""></div>
+                <div><img id="project-logo" src="images/project-logo.ico" alt="error"></div>
+                <div><span>
+                        <h1 id="BookMyCar">BookMyCar</h1>
+                    </span></div>
+            </div>
+            <div id="right-bar">
+                <div id="host-group">
+                    <div><img id="host-img" src="./images/project-logo.ico" alt=""></div>
+                    <div><button id="host-button">Become a Host</button></div>
+                </div>
+                <div><button id="login-signup-button"><span></span></button></div>
+            </div>
+        </div>
+
+        <!-- mobile section start here -->
+        <div id="mobile-head">
+            <div id="mobiles">
+                <div id="mobile">
+                    <div><img src="./images/project-logo.ico" alt=""></div>
+                    <div><span>Get The App. Save More!</span><br>
+                        <span></span><br>
+                        <span>Get Flat 15% off only on the app! Use Code: KASVR</span><br>
+                    </div>
+                </div>
+                <div>
+                    <p id="close"><b>X</b></p>
+                </div>
+            </div>
+            <div>
+                <a href="https://tinyurl.com/4pwc8cr9">Download The App</a>
+            </div>
+
+        </div>
+        <!-- mobile section finish here -->
+        <section id="section">
+            <div>
+                <!-- This one for represent car start -->
+                <div id="box-1">
+                    <img alt=""> <button>Representational image</button>
+                </div>
+                <!-- This one for represent car end -->
+
+                <!-- this one for writing text and info of car start -->
+                <div id="box-2">
+                    <div id="Car-info-text">
+                        <div>
+                            <h1>Maruti Swift MT Petrol 2016</h1>
+                            <p><span>Swift</span> <span>* Manual</span> <span>* Petrol</span> <span>* 5 Seats</span></p>
+                        </div>
+                        <div>
+                            <div><img src="/images/CustomerImagelogo.png" alt=""></div>
+                            <div>
+                                <p>NATHHI RAM</p>
+                                <p>Zoomhost since Apr'22</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- this one for Kms start -->
+                    <div id="distance">
+                        <p><i class="fa-solid fa-star"></i> 4.59 (71) · 78,209 kms driven</p>
+                    </div>
+
+                    <!-- this one for Kms end -->
+
+                    <!-- This for day renting -->
+                    <div id="time-duration-rent">
+                        <!-- left -->
+                        <div>
+                            <p></p>
+                            <div class="time-start">
+                                <p>Sat, 25 Feb, 10:00 PM</p>
+                                <p>Sitapuri</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p></p>
+                            <div class="time-end">
+                                <p>Wednesday, 28 Feb, 10:00 AM</p>
+                                <p>Sitapuri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box-3">
+                    <img src="/images/LocationImage.png" alt="">
+                    <!-- <img src="/images/Keep in Mind image.png" alt=""> -->
+                </div>
+
+
+            </div>
+            <!-- right page for payment -->
+            <div id="right-box">
+                <div>
+                    <h2>Other Charges</h2>
+                    <div id="right-box-1"><img
+                            src="https://zoomcar-assets.zoomcar.com/images/original/8b49713465c5c33330880cfe739ef06348b2c0f0.png?1659443762"
+                            alt="">
+                        <span>Convenience Fee(</span>
+                        <span>₹199</span>)<span>₹99</span>
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+                <div>
+                    <h2>TRIP PROTECTION PACKAGE</h2>
+                    <!-- A -->
+                    <div><img
+                            src="https://zoomcar-assets.zoomcar.com/images/original/f6b01d4ca15bc999a8a0bbe2bb64710cf71f9b75.png?1633967237"
+                            alt="">
+                        <div>
+                            <p>Basic (₹319)</p>
+                            <p class="lightColor-text">You pay up to INR 3499 in case of any damage</p>
+                        </div><input type="radio" name="Price" value="319">
+                    </div>
+
+                    <!-- B -->
+                    <div><img
+                            src="https://zoomcar-assets.zoomcar.com/images/original/97e7b92d185271d80fa2e7638a3eead238f9a0ed.png?1633967297"
+                            alt="">
+                        <div>
+                            <p>Standard (₹359)</p>
+                            <p class="lightColor-text">You pay up to INR 999 in case of any damage</p>
+                            <p class="deal">Most Opted</p>
+                        </div><input type="radio" name="Price" value="359" checked>
+                    </div>
+
+                    <!-- C -->
+                    <div><img
+                            src="https://zoomcar-assets.zoomcar.com/images/original/ec5e27493f742df5f714ee0830d2b623a4ba91fe.png?1667486639"
+                            alt="">
+                        <div>
+                            <p>Peace of Mind (₹429)</p>
+                            <p class="lightColor-text">You pay up to INR 99 in case of any damage</p>
+                            <p class="deal">Value for Money</p>
+                        </div><input type="radio" name="Price" value="429">
+                    </div>
+                </div>
+
+                <!-- box-3 -->
+                <div>
+                    <p>How Trip Protection Works?</p>
+                    <p>• Zoomcar will assist in damage repair costs up to the amount as per the maximum deductible
+                        limit. • Does not cover any
+                        third-party liability or any intentional damage or damage that occurred due to intoxication or
+                        high speed, rash, or
+                        negligent driving. • Please read Zoomcar policy to know more.</p>
+                </div>
+
+                <!-- box-4 -->
+                <div>
+                    <div>
+                        <h2></h2>
+                        <p><img src="/images/ApplyCoupon.png" alt=""> <span>Apply Coupon</span></p>
+                    </div>
+                    <button id="button">PROCEED TO PAY ₹2,928</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- main Section of text start here  -->
+</body>
+
+<script src="https://kit.fontawesome.com/cbfe85fe31.js" crossorigin="anonymous"></script>
+<script src="script/cartPage.js"></script>
+
+</html>

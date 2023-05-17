@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentel In Your City</title>
+    <link rel="stylesheet" href="/css/Becomehost.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        .accordion {
+            margin-left: 5%;
+            margin-right: 5%;
+            /* background-color: #eee; */
+            /* color: #444; */
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active {
+            border: 1px solid silver;
+            background-color: white;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .accordion img {
+            padding-right: 5%;
+            height: 7%;
+            width: 7%;
+        }
+
+        .panel {
+            margin-left: 4%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- -------------------------navbar--------------------------------------- -->
+    <div id="navbar">
+        <div id="left-bar">
+            <div><img id="ham-burger-icon" src="./images/icons8-menu-rounded-48.png" alt=""></div>
+            <div><img id="project-logo" src="images/project-logo.ico" alt="error"></div>
+            <div><span>
+                    <h1 id="BookMyCar">BookMyCar</h1>
+                </span></div>
+        </div>
+        <div id="right-bar">
+
+            <a href="https://www.zoomcar.com/in/host/en/faq">
+                <div><span>FAQs</span></div>
+            </a>
+            <div id="Refer"><span>Refer & Earn</span></div>
+            <div><span><a style="color: white;" href="Register.html">Sign Up/Login</a></span></div>
+            <div><button id="Start_Earninig">Start Earninig</button></div>
+
+            <div id="host-group">
+                <div><img id="host-img" src="./images/project-logo.ico" alt=""></div>
+                <div><button id="host-button"><a href="">Download App</a></button></div>
+            </div>
+            <div><button id="login-signup-button"><span><a style="color: white;" href="Register.html">Login/Signup</a> </span></button></div>
+        </div>
+    </div>
+
+    <div id="mobile-head">
+        <div id="mobiles">
+            <div id="mobile">
+                <div><img src="./images/project-logo.ico" alt=""></div>
+                <div><span>Get The App. Save More!</span><br>
+                    <span></span><br>
+                    <span>Get Flat 15% off only on the app! Use Code: KASVR</span><br>
+                </div>
+            </div>
+            <div>
+                <p id="close"><b>X</b></p>
+            </div>
+        </div>
+        <div>
+            <a href="https://tinyurl.com/4pwc8cr9">Download The App</a>
+        </div>
+
+    </div>
+
+    <div id="side-bar">
+        <div id="user-css">
+            <div>
+                <div><img src="./images/user.png" alt=""></div>
+                <div>
+                    <p>Login or Signup</p>
+                </div>
+            </div>
+            <div id="X"><span>X</span></div>
+        </div>
+
+        <div id="change-city">
+            <div id="city">
+                <div>
+                    <img src="./images/icons8-location-50.png" alt="">
+                    <span><a style="text-decoration: none;" style="color: black;" href="./faq.html">Change City-DelhiNCR</a></span>
+                </div>
+            </div>
+
+        </div >
+        <div id="FAQ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-0RkgtnwRCTQP-MBrSQIvQ3nq7WIsO3d16A&usqp=CAU"
+                alt="">
+            <span ><a style="text-decoration: none;" style="color: black;" href="./faq.html">FAQ's</a></span>
+        </div>
+        <div id="Refer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYenzaH7YVvfKfc6iAX1OHdZg7QI25voMXsA&usqp=CAU"
+                alt="">
+            <span><a style="text-decoration: none;" style="color: black;" href="">Refer & Earn</a></span>
+        </div>
+        <div id="Policies">
+            <img src="./images/icons8-documents-99.png" alt="">
+            <span><a style="text-decoration: none;" style="color: black;" href="./faq.html">Policies</a></span>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- -------------------------------------refer & earn -->
+<div id="main_section">
+    <div id="refer" class="refers">
+        <img id="button"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8TwO5tI7PKeA0uXmjGQRkW7aLiCax5Q2RwyImJE5bUGonopCdzGW&usqp=CAE&s"
+            alt="">
+        <h2>Refer & Earn</h2>
+        <p>You Earn ₹4,999/-</p>
+        <p>Your friend Gets upto ₹4,999/-</p>
+        <p>You1 Both Win</p>
+        <img src="https://www.zoomcar.com/zap/subscribe/build/2dac7c3e3ed475d15bf341d377b66ed9.svg" alt="">
+        <div id="refer-div" >
+            <div>
+                <img src="https://www.zoomcar.com/zap/subscribe/build/57cc7c360d39278b0396db7f870e7cd0.png" alt="">
+                <p>Whatsapp</p>
+            </div>
+            <div>
+                <img src="https://www.zoomcar.com/zap/subscribe/build/511323b8e90983b78fe644c8c9075cf2.png" alt="">
+                <p>Facbook</p>
+            </div>
+            <div>
+                <img src="https://www.zoomcar.com/zap/subscribe/build/56993356b7e8876d8eadb92affa38ab7.png" alt="">
+                <p>Twitter</p>
+            </div>
+            <div>
+                <img src="https://www.zoomcar.com/zap/subscribe/build/660be3fc6381ddb61de93a26d3720783.png" alt="">
+                <p>Code</p>
+            </div>
+
+        </div>
+        <a href="#">Terms & Conditions</a>
+    </div>
+</div>
+
+    <!-- ------------------------------all sections -->
+
+    <div id="section-1">
+
+        <div id="for-two-cards">
+
+            <div id="card-1">
+                <!-- card-1 -->
+                <h3>How much could you earn by sharing Your car?</h3>
+                <select id="border" class="padright">
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="KIA">KIA</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Maruti">Maruti</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="MG Motors">MG Motors</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Opel">Opel</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Tango">Tango</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Sabaru">Sabaru</option>
+                    <option value="Isuzu">Isuzu</option>
+                    <option value="JAC">JAC</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Land Rover">Land Rover</option>
+
+                </select>
+
+                <select id="border" class="padright">
+                    <option value="Aveo">Aveo</option>
+                    <option value="Cruze">Cruze</option>
+                    <option value="Optra">Optra</option>
+                    <option value="Captiva">Captiva</option>
+                    <option value="Equinox">Equinox</option>
+                    <option value="Trailblazer">Trailblazer</option>
+                </select>
+
+
+                <h3>Sharing days</h3>
+                <input id="range" type="range" name="timerange" min="1" max="30" step="1">
+                <h3 class="card1">Your monthly earning upto</h3>
+                <h1 class="card1" id="demo">price  </h1>
+            </div>
+            <!-- ----------------------------------- -->
+
+            <div id="card-2">
+                <!-- card-2 -->
+
+                <div id="sub-card-2">
+                    <div id="logo">
+                        <img src="https://doav52ie4cv60.cloudfront.net/images/bonus.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Earn joining bonous of upto</h3>
+                        <h1> ₹5000</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --------------------------- -->
+        <div id="sliding">
+            <img src="https://doav52ie4cv60.cloudfront.net/in/host/share-your-car/images/host-web-banner2.jpg" alt="">
+            <!-- <img src="https://doav52ie4cv60.cloudfront.net/in/host/share-your-car/images/host-web-banner4.jpg" alt="">
+            <img src="https://doav52ie4cv60.cloudfront.net/in/host/share-your-car/images/host-web-banner-1.png" alt="">
+            <img src="https://doav52ie4cv60.cloudfront.net/in/host/share-your-car/images/host-web-banner3.jpg" alt="">
+ -->
+
+        </div>
+
+
+    </div>
+
+
+    <div id="section-2">
+        <div id="main-heading">
+            <h3>3 SIMPLE STEPS TO START SHAREING AND EARNING</h3>
+        </div>
+
+        <div id="sub-section-2">
+            <div>
+                <img class="content" src="https://doav52ie4cv60.cloudfront.net/images/aboutdetail.svg" alt="">
+                <h2 class="center">Tell us about yourself</h2>
+                <p>Share your car details with us through this <a href="">form</a>
+                    and shedule car inspection from our expects</p>
+
+            </div>
+
+            <div>
+                <img class="content" src="https://doav52ie4cv60.cloudfront.net/images/secure-car.svg" alt="">
+                <h2 class="center">Setup for shareing </h2>
+                <p>Signup on the app and provide us your PAN, BANK and Address details and
+                    you are now ready to share yor car</p>
+            </div>
+
+            <div>
+                <img class="content" src="https://doav52ie4cv60.cloudfront.net/images/share-earn.svg" alt="">
+                <h2 class="center">Share and earn</h2>
+                <p>Select the sharing dates for your car. Our experts will visit you
+                    to install the safety devices and then you are ready to earn
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <div id="section-3">
+        <div id="is-heading">
+            <strong>Why Share your Car with us?</strong>
+        </div>
+
+        <div id="section-3-cards">
+            <img src="https://doav52ie4cv60.cloudfront.net/images/repair.svg" alt="">
+            <h2>Major damage and repair coverage</h2>
+            <p>
+                We provide damage cover and handle repairs in case of damage during a booking.
+            </p>
+        </div>
+
+        <div id="section-3-cards">
+            <img src="https://doav52ie4cv60.cloudfront.net/images/earning.svg" alt="">
+            <h2>Earning from home</h2>
+            <p>
+                Our hosts earn upto Rs.50000 per month along with added bonuses for sharing their cars
+            </p>
+        </div>
+
+        <div id="section-3-cards">
+            <img src="https://doav52ie4cv60.cloudfront.net/images/flexibility.svg" alt="">
+            <h2>Power of flexiblity</h2>
+            <p>
+                Using our mobile app, you can share your car based on your convenience and schedule
+            </p>
+        </div>
+
+        <div id="section-3-cards">
+            <img src="https://doav52ie4cv60.cloudfront.net/images/secure-car.svg" alt="">
+            <h2>Safe secure and smooth</h2>
+            <p>
+                We install safety and keyless entry devices to make sharing your car a safe, secured and smooth process
+            </p>
+        </div>
+
+    </div>
+    <!-- ----------------------------------------------------------- -->
+    <div id="section-4">
+        <div id="section-4heading">
+            <strong>HEAR FROM OUR HOSTS</strong>
+        </div>
+        <div id="sub-section-4">
+            <div>
+                <h4 class="center"> Avineet, Bangalore</h4>
+                <img id="center-comma" src="https://doav52ie4cv60.cloudfront.net/images/quotes.svg" alt="">
+                <h5 class="center"> Multiple cars on the platform</h5>
+                <p>I have attached 3 vehicles. I have earned ₹4 lacs in 5 months.
+                    Relisting car on weekends, we can also earn extra amount
+                </p>
+            </div>
+
+            <div>
+                <h4 class="center">Vanshika, HR, Mumbai</h4>
+                <img id="center-comma" src="https://doav52ie4cv60.cloudfront.net/images/quotes.svg" alt="">
+                <h5 class="center"> Car is paying for itself</h5>
+                <p>"I am in love with this idea and enjoying my time with Zoomcar host.
+                    My car is paying for itself and that’s a great benefit"
+                </p>
+            </div>
+
+            <div>
+                <h4 class="center"> Avineet, Bangalore</h4>
+                <img id="center-comma" src="https://doav52ie4cv60.cloudfront.net/images/quotes.svg" alt="">
+                <h5 class="center"> Multiple cars on the platform</h5>
+                <p>I have attached 3 vehicles. I have earned ₹4 lacs in 5 months.
+                    Relisting car on weekends, we can also earn extra amount
+                </p>
+            </div>
+
+            <div>
+                <!-- <img style="height:10%;width: 10%; "; src="https://doav52ie4cv60.cloudfront.net/images/testimonial/Vanshika.png" alt=""> -->
+                <h4 class="center"> Avineet, Bangalore</h4>
+                <img id="center-comma" src="https://doav52ie4cv60.cloudfront.net/images/quotes.svg" alt="">
+                <h5 class="center"> Multiple cars on the platform</h5>
+                <p>I have attached 3 vehicles. I have earned ₹4 lacs in 5 months.
+                    Relisting car on weekends, we can also earn extra amount
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------------------- -->
+    <div id="section-5">
+        <img src="https://doav52ie4cv60.cloudfront.net/in/host/share-your-car/images/ZH_referral_banner_app_02.jpg"
+            alt="">
+    </div>
+
+
+
+
+    <!-- -------------------------------------- -->
+    <div id="section-6"></div>
+
+    <div id="section-6-heading"><strong>
+            <h1>STILL HAVE QUESTIONS?</h1>
+        </strong></div>
+
+    <div id="main-div">
+        <div id=" sub-div" style="display: flex;">
+            <div id="sub-sub-div-1">
+                <button class="accordion">
+                    <p> <span><img src="https://doav52ie4cv60.cloudfront.net/images/renters-ico.svg"></span>
+                    <p>
+                        Do I need to meet the guests of my car?
+                    </p>
+                </button>
+                <div class="panel">
+                    <p>We have installed the keyless entry devices in your car, which makes sure that you need not meet
+                        any of the guests in person, either at the start, or at the end of any booking.</p>
+
+                </div>
+
+                <button class="accordion">
+                    <p> <span><img src="https://doav52ie4cv60.cloudfront.net/images/get-paid-ico.svg"></span>
+                    <p>How will I get Paid?</p>
+                </button>
+                <div class="panel">
+                    <p>
+                        You will earn 60% of the booking revenue that your car earns on every booking.
+                        Your earnings will be paid to you on a weekly basis.
+                        Use our quick online calculator to see how much you can earn by sharing the car.
+                    </p>
+                </div>
+
+                <button class="accordion">
+                    <p> <span><img src="https://doav52ie4cv60.cloudfront.net/images/challans-ico.svg"></span>
+                        What happens if my car gets challans ?</p>
+                </button>
+                <div class="panel">
+                    <p>
+                        Your total earnings will be credited to your bank account every week. You can access your
+                        detailed earnings through our Zoomcar Host app.
+                    </p>
+                </div>
+
+            </div>
+            <div id="sub-sub-div-1">
+                <button class="accordion">
+                    <p> <span><img src="https://doav52ie4cv60.cloudfront.net/images/earn-ico.svg">
+                        </span> How much will I earn?
+                    <p>
+
+                    </p>
+                </button>
+                <div class="panel">
+                    <p>
+                        Our intelligent demand based pricing system optimizes the price of your car.
+                        We also send you suggestion for peak seasons to share your car. We ensure you get maximum
+                        earning while sharing the car.
+                    </p>
+                </div>
+
+                <button class="accordion">
+                    <p> <span><img src="https://doav52ie4cv60.cloudfront.net/images/car-price-ico.svg"></span>
+                    <p>
+                        How is the price of my car decided?
+                    </p>
+                    </p>
+                </button>
+                <div class="panel">
+                    <p>
+                        Zoomcar will take care of all challans incurred during car sharing.
+                    </p>
+                </div>
+
+                <button class="accordion">
+                    <p><span><img src="https://doav52ie4cv60.cloudfront.net/images/setting-ico.svg"></span>
+                    <p> Why are safety devices installed?</p>
+                </button>
+                <div class="panel">
+                    <p>
+                        These are Zoomcar's proprietary tech devices. They are installed in the car to keep track of car
+                        health and location of your car.
+                        It keeps your car safe when shared with Guests.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- ---------------------------------- -->
+    <div id="qr">
+        <div>
+            <span>Never</span><br>
+            <span>Stop</span><br>
+            <span>Living.</span>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.zoomcar.com/zap/subscribe/build/92f8af213ad661e016a99ecd01e53d56.png" alt="">
+                <p>Scan this QR code</p>
+                <p> to download app</p>
+            </div>
+            <div>
+                <h1>DOWNLOAD BookMyCar APP</h1>
+                <p>We have incredible offers, discounts & much more in our app.</p>
+                <p></p>
+                <p></p>
+                <img src="https://www.zoomcar.com/zap/subscribe/build/07018682025c76b812f5938dd246dcb0.png" alt="">
+                <img src="https://www.zoomcar.com/zap/subscribe/build/96be483c040ed13df0882463a660047a.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <h4> More about Zoomcar Host</h4>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    <div id="side-bar">
+        <div id="user-css">
+            <div>
+                <div><img src="./images/user.png" alt=""></div>
+                <div>
+                    <p>Login or Signup</p>
+                </div>
+            </div>
+            <div id="X"><span>X</span></div>
+        </div>
+        <div id="change-city">
+            <div>
+                <div>.png" alt="">
+                    <span>Change City</span>
+                    <img src="./images/icons8-location-50
+        </div>
+    </div>
+    <div>
+        <span id="change">Delhi NCR</span>
+                </div>
+
+            </div>
+            <div>
+                <img src="./images/project-logo.ico" alt="">
+                <span>Become Host</span>
+            </div>
+            <div>
+                <img src="./images/icons8-documents-99.png" alt="">
+                <span> BookMyCar Fleet Vehicles Policies</span>
+            </div>
+            <div>
+                <img src="./images/icons8-documents-99.png" alt="">
+                <span> BookMyCar Fleet Vehicles Policies</span>
+            </div>
+            <div>
+                <img src="./images/icons8-phone-50.png" alt="">
+                <span>Help & Support<span>
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
+<script src="/script/Becomehost.js"></script>
+ 
+<script src="/policy.html"></script>
+<script src="/faq.html"></script>

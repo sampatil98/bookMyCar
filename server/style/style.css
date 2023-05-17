@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.primary_div{
+    display: flex;
+    margin: 15px;
+}

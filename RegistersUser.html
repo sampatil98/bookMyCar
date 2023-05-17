@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterUser</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        #login-box {
+            width: 25%;
+            margin: 0px auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            height: 100vh;
+            padding: 2rem;
+            position: relative;
+            /* border: 2px solid red; */
+        }
+
+        #login-box>div:nth-child(1)>div:nth-child(1) {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        #login-box>div:nth-child(1)>h4 {
+            color: #b3a4a4;
+        }
+
+        #login-box>div:nth-child(1)>h3 {
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #login-box>div:nth-child(1)>p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type="password"],
+        input[type="text"] {
+            width: 90%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin: 1.5rem auto;
+        }
+
+        input[type="password"]:focus {
+            border: 2px solid green;
+            outline: none;
+        }
+
+        #login-box input[type="button"] {
+            height: 3rem;
+            margin: auto auto 1rem 1.5rem;
+            color: white;
+            border: none;
+            padding: 1rem;
+            background: #dddddd;
+            position: absolute;
+            bottom: 4rem;
+            width: 90%;
+        }
+
+        #login-box input[type="button"]:hover {
+            cursor: pointer;
+        }
+
+        #login-box>div:nth-child(1)>p>*:last-child {
+            color: #10a310;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            #login-box {
+                width: 40%;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            #login-box {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #login-box {
+                width: 80%;
+                margin: auto;
+
+            }
+
+            #login-box input[type="button"] {
+                margin-right: 2rem;
+            }
+
+            input[type="password"],
+            input[type="text"] {
+                font-size: 0.8rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="login-box">
+        <div>
+            <div><i class="fa-solid fa-arrow-left"></i></div>
+            <h3>Fill In A Few More Details</h3>
+            <p>One last step to create a new account</p>
+            <input type="text" placeholder="Full Name (As Per Driving License)">
+            <input type="password" placeholder="Password">
+            <h4>* Minimum 6 character</h4>
+        </div>
+
+        <input type="button" value="CONTINUE" disabled>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/cbfe85fe31.js" crossorigin="anonymous"></script>
+<script>
+    let inputName = document.querySelector(`input[type="text"]`);
+    let inputPassword = document.querySelector(`input[type='password']`);
+    let backButton = document.querySelector(`.fa-arrow-left`);
+    let inputSubmit = document.querySelector(`input[type='button']`);
+    inputName.addEventListener("keyup",()=>{
+
+        if(inputPassword.value.length>=6 && inputName.value){
+            inputSubmit.style.background = 'green';
+            inputSubmit.disabled = false;
+        }
+        else if (inputPassword.value.length <6 || inputName.value.length === 0 ) {
+            inputSubmit.style.background = '#dddddd';
+            inputSubmit.disabled = true;
+        }
+    })
+    inputPassword.addEventListener("keyup", () => {
+
+            if (inputPassword.value.length >= 6 && inputName.value) {
+                inputSubmit.style.background = 'green';
+                inputSubmit.disabled = false;
+            }
+            else if (inputPassword.value.length < 6 || inputName.value.length === 0) {
+                inputSubmit.style.background = '#dddddd';
+                inputSubmit.disabled = true;
+            }
+    })
+
+    inputSubmit.addEventListener("click",()=>{
+      fetch(`https://apiuser-l6ki.onrender.com/users`,{
+        method:"POST",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify({
+            name: inputName.value,
+            password:inputPassword.value,
+            username:localStorage.getItem(`Email-ID`)
+        })
+    })
+    .then((req)=>{
+        localStorage.setItem("Name",inputName.value);
+        window.location.replace(`/index.html`)
+    })
+        
+    })
+
+    backButton.addEventListener("click",()=>{
+        window.history.back();
+    })
+    
+
+</script>
+
+</html>

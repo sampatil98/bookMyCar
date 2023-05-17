@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @ Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+
+        #login-box {
+            width: 25%;
+            margin: 0px auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            height: 100vh;
+      
+            padding: 2rem;
+            position: relative;
+        }
+
+        #login-box>div:nth-child(1) {
+            margin-top: 2rem;
+            margin-bottom: 0px;
+            height: 250px;
+        }
+
+        #login-box>div:nth-child(2) {
+            display: none;
+        }
+
+        #login-box>div:nth-child(1)>div:nth-child(1) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .registerMsg {
+
+            width: 90%;
+            margin: 2rem;
+            position: absolute;
+            top: 20rem;
+        }
+
+        #login-box>div:nth-child(1)>h1 {
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #login-box>div:nth-child(1)>p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type="email"] {
+            width: 90%;
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+
+        input[type="email"]:focus {
+            border: 2px solid green;
+            outline: none;
+        }
+
+        #login-box input[type="button"] {
+            height: 3rem;
+            margin: auto auto 1rem 1.5rem;
+            color: white;
+            border: none;
+            padding: 1rem;
+            background: #dddddd;
+            position: absolute;
+            bottom: 4rem;
+            width: 90%;
+        }
+
+        #login-box input[type="button"]:hover {
+            cursor: pointer;
+        }
+
+        .xIcon {
+            float: right;
+            border-radius: 50%;
+        }
+        .xIcon:hover{
+            cursor: pointer;
+        }
+
+        #forRegisterMsg {
+            margin-top: 1.5rem;
+            margin: 1.5rem auto;
+            padding: 1rem;
+            border-top: 2px solid green;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            border-radius: 0.3rem;
+
+        }
+
+        #forRegisterMsg>h2 {
+            color: #10a310;
+        }
+
+        #forRegisterMsg a {
+            color: white;
+            width: 100%;
+            background: #10a310;
+            padding: 1rem 0px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.3rem;
+        }
+
+        /* when user is not register and we implement transparent */
+        .registerMsg {
+            background-color: white;
+        }
+
+        #login-box .hideEmail {
+            background: black;
+            opacity: 0.1;
+        }
+
+        #login-box .hideSubmitBtn {
+            background: rgb(16, 16, 16);
+            opacity: 0.1;
+        }
+        .fa-arrow-left:hover{
+            cursor: pointer;
+        }
+
+
+
+
+        @media only screen and (max-width: 1200px) {
+            #login-box {
+                width: 40%;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            #login-box {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #forRegisterMsg>p {
+                font-size: 0.8rem;
+
+            }
+
+            #login-box {
+                width: 60%;
+                margin: auto;
+            }
+
+            #login-box>div:nth-child(2) {
+                margin: auto 1rem auto 1rem;
+                /* padding-left: 2rem; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="login-box" class="bg-transparent">
+        <div>
+            <div><i class="fa-solid fa-arrow-left"></i></div>
+            <h3>Enter Email ID</h3>
+            <p>We'll verify if the email is registered with us</p>
+       
+            <input type="email" name="email" placeholder="Email ID">
+        </div>
+        <div>
+            <div><img class="xIcon" src="/images/xIcon.png" alt=""></div>
+            <div id="forRegisterMsg">
+                <h2>New here? Welcome!</h2>
+                <p>The email id <span></span> has not been registered with us. Lets create a new account.</p>
+                <a href="RegistersUser.html">REGISTER</a>
+            </div>
+        </div>
+        <input type="button" value="CONTINUE">
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/cbfe85fe31.js" crossorigin="anonymous"></script>
+<script>
+    let userArr = [];
+    let inputEmail = document.querySelector(`input[type="email"]`);
+    let inputBtn = document.querySelector(`input[type='button']`);
+    let registerMsg = document.querySelector("#login-box>div:nth-child(2)");
+    let textMsgRegister = document.querySelector(`#login-box>div:nth-child(2)`);
+    let emailSpan = document.querySelector("#forRegisterMsg span")
+    let container = document.querySelector("#login-box")
+    let xIcon = document.querySelector(`.xIcon`);
+    let backArrow = document.querySelector(`.fa-arrow-left`)
+
+    window.addEventListener("load", () => {
+        fetch(`https://apiuser-l6ki.onrender.com/users`)
+            .then((req) => req.json())
+            .then((received) => userArr = received)
+    })
+    inputEmail.addEventListener("keyup", () => {
+        if (inputEmail.value.length === 0) inputBtn.style.background = `#dddddd`
+        else if (inputEmail.value.length > 0) inputBtn.style.background = 'green';
+    })
+    backArrow.addEventListener("click",()=>{
+                window.history.back();
+    })
+    inputBtn.addEventListener("click", () => {
+        let present;
+        for (let user of userArr) {
+            if (user.username === inputEmail.value){
+                    let usetDetails = localStorage.setItem(`user`,JSON.stringify(user))
+                    present = user;
+                    window.location.replace(`/loginPassword.html`);
+                  
+            } 
+        }
+        if (!present) {
+            registerMsg.style.display = `block`;
+            displayTransparent("#1f1f1f")
+            localStorage.setItem(`Email-ID`,inputEmail.value)
+          
+        }
+    })
+    xIcon.addEventListener("click", () => {
+
+        container.style.background = `white`;
+        registerMsg.style.display = 'none';
+        inputEmail.classList.remove("hideEmail");
+        registerMsg.classList.remove(`registerMsg`);
+        inputBtn.classList.remove(`hideSubmitBtn`);
+    })
+    function displayTransparent(bg, op) {
+        container.style.background = bg;
+        registerMsg.classList.add(`registerMsg`);
+        inputEmail.classList.add("hideEmail");
+        inputBtn.classList.add(`hideSubmitBtn`);
+        emailSpan.innerText = inputEmail.value;
+        registerMsg.style.display = 'block';
+    }
+
+</script>
+
+</html>
