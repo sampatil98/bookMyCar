@@ -29,5 +29,5 @@ This is the project of cloning the website zoomcar.com an Indian Website from wh
 About US:-
 Zoomcar is India's largest marketplace for cars on rent.Zoomcar is an Indian car sharing platform,headquartered in Bangalore. The company was founded in 2013 by Davik Back and Greg Moran.It currently operates in 34+ cities. From short trips to quick in-city drives for groceries,supply pick-up,food runs,we have the cheapest car rental options for all your needs. A hatchback for daily commute, a sedan for short trips, SUV for hills or a luxury car for a surprise. With zoomcar, you can experience the convenience of online booking. The cars listed on our platform come with all-India permits that include vehicle insurance.It is extremely easy to pick up the car from the host location. You can drive unlimited KMs, with 100% free cancellation up to 6 hours before the trip starts, 0 Security Deposit, 0 Toll Charges, and 24/7 Roadside Assistance.A hatchback for daily commute, a sedan for short trips, SUV for hills or a luxury car for a surprise.
 
-
+deployed link:https://chipper-pegasus-8ad28c.netlify.app
 
